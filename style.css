@@ -1,0 +1,747 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* header section here  ====== */
+.top .header {
+  width: 100%;
+  padding: 0px 5%;
+  display: flex;
+  background-color: #d3d3d3;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .header .right {
+  display: flex;
+  align-items: center;
+}
+.top .header .right ul {
+  display: flex;
+  align-items: center;
+}
+.top .header .right ul li {
+  padding: 40px 30px;
+  cursor: pointer;
+  list-style-type: none;
+}
+.top .header .right ul li a{
+  text-transform: uppercase;
+}
+.top .header .right ul li.active a {
+  color: blue !important;
+
+}
+.top .header .right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+#menu,
+#cancel {
+  display: none;
+  cursor: pointer;
+}
+/* home section.top here ============= */
+.top .hero {
+  width: 100%;
+  display: flex;
+  padding: 30px 5% 0px 5%;
+  background-color: #fcf5c7;
+}
+.top .hero .left {
+  width: 35%;
+}
+.top .hero .right {
+  width: 65%;
+}
+.top .hero .left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top .hero .left img {
+  width: 100%;
+}
+.top .hero .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.top .hero .right h1 {
+  font-size: 90px;
+  font-weight: 800;
+  margin-left: -160px;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, #adfbae, #80ccfb, #daa5fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 130px;
+  font-family: 'Dancing Script', cursive;
+}
+.top .hero .right p {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: -160px;
+ color: #8DD5F2;
+}
+/* pink, blue, green  */
+.aboutTop {
+  width: 100%;
+  padding: 80px 0px;
+  background-color: #87CEEB;
+}
+.about {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  border: 2px solid;
+  padding: 40px;
+}
+.about p {
+  font-size: 30px;
+  text-align: center;
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+}
+.about .leftGetBtn {
+  margin: auto;
+  display: block;
+  width: 200px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  margin-bottom: -65px!important;
+  border: none;
+}
+
+.blogPostCopyWritting {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: #fcf5f7;
+}
+.blogPostCopyWritting h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 100px;
+}
+.blogPostCopyWritting .row {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.blogPostCopyWritting .row .col {
+  width: 32%;
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 5px;
+  position: relative;
+}
+.blogPostCopyWritting .row .col img {
+  position: absolute;
+  top: -7%;
+  left: 45%;
+}
+.blogPostCopyWritting .row .col p {
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  line-height: 1.5em;
+}
+/* about me === */
+.aboutMe {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: #90EE90;
+}
+.aboutMe .row {
+  display: flex;
+}
+.aboutMe .row .left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
+}
+.aboutMe .row .left p {
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.aboutMe .row .right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .row .right img {
+  width: 80%;
+  border-radius: 20px;
+}
+#showTopOnMobile{
+  display: none;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+#showTopOnMobile img{
+margin: auto;
+display: block;
+}
+.aboutMe .leftGetBtn {
+  margin: auto;
+  display: block;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  border: none;
+  margin-top: 50px;
+  border: 2px solid none;
+  background-color: #000;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+/* footer here === */
+.footer {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: #0a0f1e;
+}
+.footer h1 {
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 10px;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul li {
+  list-style-type: none;
+  margin-bottom: 7px;
+  margin-right: 15px;
+}
+.footer ul li a {
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+}
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+/* contact page css section start here ++++++++++++++++++++====================== */
+.top .message {
+  width: 100%;
+  padding: 130px 5%;
+  background-color: #00008b;
+  text-align: center;
+}
+.top .message p {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+.form {
+  max-width: 800px;
+  margin: 80px auto;
+  width: 90%;
+  padding: 50px;
+  background-color: #FFD580;
+  border-radius: 5px;
+}
+.form p {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+.form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  font-family: 'Quicksand', sans-serif;
+}
+.form textarea {
+  width: 100%;
+  height: 250px;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+.form button{
+  display: block;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: 2px solid none;
+  background-color: #000;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+/* portfolio page section here for css ====================== */
+.writeAbout {
+  max-width: 1200px;
+  width: 90%;
+  margin: 130px auto;
+}
+#portfolioMessage{
+  background-color: #424BB3!important;
+
+}
+#portfolioMessage p{
+  font-family: 'Updock', cursive;
+  font-size: 60px;
+  text-transform:lowercase;
+  font-family: 'Dancing Script', cursive;
+}
+.writeAbout h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 40px;
+}
+.writeAbout ul li {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+.leftGetBtn {
+  margin: auto;
+  display: block;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 50px !important;
+  border: none;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.myProjects {
+  width: 100%;
+  background-color: #fcf5f7;
+  padding: 80px 5%;
+}
+.myProjects h1{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+.myProjects .row {
+  max-width: 1200px;
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.myProjects .row .col {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.myProjects .row .col a {
+  height: 300px;
+  overflow: hidden;
+}
+.myProjects .row .col a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* services pages content here ?======================== */
+.services {
+  max-width: 1200px;
+  width: 90%;
+  margin: 130px auto;
+}
+.services h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 40px;
+}
+.services ul li{
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.rates {
+  padding: 80px 5%;
+  background-color: #fcf5f7;
+}
+.rates .row {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.rates .row h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.rates .row .leftGetBtn {
+  margin: auto;
+  display: block;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 0px!important;
+  border: none;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* about page section css here ====================== */
+.aboutSec {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: #F9D068;
+}
+#aboutSec{
+  background-color: #424BB3!important;
+}
+
+#aboutSec p{
+  font-family: 'Licorice', cursive;
+  font-size: 60px;
+}
+.aboutSec .row {
+  display: flex;
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+}
+
+.aboutSec .row .left {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.aboutSec .row .left img {
+  width: 100%;
+  border-radius: 20px;
+  border: 4px solid white;
+}
+.aboutSec .row .right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutSec .row .right p {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 25px;
+  line-height: 3em;
+  margin-right: 80px;
+  text-align: justify;
+}
+.whyworkwithme {
+  max-width: 1200px;
+  margin: 130px auto;
+  width: 90%;
+}
+
+.whyworkwithme h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 40px;
+}
+.whyworkwithme ul li {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.whyworkwithme .leftGetBtn {
+  margin: auto;
+  display: block;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  color: #fff;
+  margin-top: 50px !important;
+  border: none;
+  background-color: #000;
+
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+.aboutMeAgain {
+  width: 100%;
+  padding: 130px 5%;
+  background-color: #C2C4FA;
+}
+.aboutMeAgain .row {
+  display: flex;
+  width: 100%;
+}
+.aboutMeAgain .row .left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutMeAgain .row .left img {
+  max-width: 600px;
+  width: 80%;
+  border-radius: 20px;
+  border: 7px solid #fff;
+}
+.aboutMeAgain .row .right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 100px;
+}
+.aboutMeAgain .row .right p {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  line-height: 2.5em;
+}
+.aboutMeAgain .row .right h1 {
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* media query here ========== */
+@media only screen and (max-width: 1770px) {
+  .top .hero .right h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 130px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  
+  .top .hero .right h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  .top .hero .right p {
+    font-size: 30px;
+  }
+  .aboutSec .row .left {
+    width: 40%;
+  }
+  .aboutSec .row .left img {
+    max-width: 400px;
+    width: 80%;
+  }
+  .aboutSec .row .right {
+    width: 60%;
+  }
+  .top .hero .right {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 1400px){
+  .top .hero .right h1,
+  .top .hero .right p{
+    margin-left: -100px;
+
+  }
+  .aboutMeAgain .row .right {
+    padding: 0px 0px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .blogPostCopyWritting .row {
+    flex-wrap: wrap;
+  }
+  .blogPostCopyWritting .row .col {
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  .aboutMeAgain .row .left {
+    width: 40%;
+  }
+  .aboutMeAgain .row .right {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .top .hero .right h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  #portfolioMessage p{
+    font-size: 60px!important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .top .hero .right h1,
+  .top .hero .right p{
+    margin-left: 0px;
+  }
+  .top .hero {
+    flex-wrap: wrap;
+  }
+  .top .hero .left {
+    width: 100%;
+    justify-content: center;
+  }
+  .top .hero .right {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .top .hero .left img {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #showTopOnMobile{
+    display: block;
+  }
+  #showBottomOnMobile{
+    display: none;
+  }
+  .aboutMe .row {
+    flex-wrap: wrap;
+  }
+  .aboutMe .row .left {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0px;
+  }
+  .aboutMe .row .right {
+    width: 100%;
+  }
+  .aboutMe .row .right img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .aboutSec .row .right p {
+    margin-right: 20px;
+  }
+  .aboutSec .row .left img {
+    width: 100%;
+  }
+  .aboutMeAgain .row {
+    flex-wrap: wrap;
+  }
+  .aboutMeAgain .row .left {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .aboutMeAgain .row .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .blogPostCopyWritting .row .col {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .top .header .right ul {
+    position: fixed;
+    top: 0px;
+    flex-direction: column;
+    z-index: 9999;
+    right: -100%;
+    bottom: 0px;
+    max-width: 400px;
+    transition: 0.4s;
+    width: 100%;
+    background-color: #fff;
+  }
+  #menu {
+    display: block;
+    padding: 40px 0px;
+  }
+  #cancel {
+    display: block;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+  }
+  .aboutSec .row {
+    flex-wrap: wrap;
+  }
+  .aboutSec .row .right {
+    width: 100%;
+  }
+  .aboutSec .row .left {
+    width: 100%;
+  }
+  .myProjects .row .col {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .form {
+    padding: 10px;
+  }
+  .top .hero .right h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .aboutSec .row .right p {
+    margin-right: 0px;
+  }
+}

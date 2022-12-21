@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=ß, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="header">
+        <div class="left">
+          <h1>LOGO</h1>
+        </div>
+        <div class="right">
+          <ul id="menuContent"> 
+            <img id="cancel" onclick="closeMenu()" src="./img/cancel.png" alt="">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li ><a href="./portfoilio.html">Portfolio</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li class="active"><a href="./contact.html">Contact</a></li>
+          </ul>
+          <img id="menu" onclick="openMenu()" src="./img/mwnuu.png" alt="">
+        </div>
+      </div>
+      <div class="message"  id="portfolioMessage">
+        <p>
+          GAIN YOUR CUSTOMERS’ TRUST AND LOYALTY <br> WITH COPY THAT MAKES A
+          DIFFERENCE IN THEIR LIVES
+        </p>
+      </div>
+    </div>
+
+    <div class="form">
+      <p>
+        Fill out the form below or email me at
+        mashaerlich.freelancewriting@gmail.com to start our journey together!
+      </p>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email Address" />
+      <input type="text" placeholder="Website URL" />
+      <textarea
+        name="message"
+        id="message"
+        placeholder="How may I be of service?"
+      ></textarea>
+      <button><b>SUBMIT</b></button>
+    </div>
+
+    <div class="footer">
+      <h1>Easy Link</h1>
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./portfoilio.html">Portfolio</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./contact.html">Privacy Policy</a></li>
+        <li><a href="./contact.html">Term of agreement</a></li>
+      </ul>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
